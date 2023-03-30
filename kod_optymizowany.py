@@ -45,7 +45,6 @@ class Gra():
                             self.bot.edit_message_reply_markup(call.message.chat.id, call.message.message_id, reply_markup=reply_markup)
                             reply_markup = types.ReplyKeyboardRemove()
                             self.bot.send_message(call.message.chat.id, f"Wygrał {winner}", reply_markup=reply_markup)
-                            self.any_is_empty(b)
                             self.bot.send_sticker(call.message.chat.id, "CAACAgIAAxkBAAIScGQl2q87XrbDvu3H9Q7xlYdu9v7XAAIaAAPANk8TgtuwtTwGQVcvBA")
                             self.game=False
                         else:

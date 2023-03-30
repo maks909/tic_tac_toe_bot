@@ -60,7 +60,7 @@ class Gra():
                 else:
                     self.bot.answer_callback_query(call.id, "Chybo źle grasz... Proszę spróbuj jeszcze raz.")
             else:
-                self.bot.answer_callbacck_query(call.id, "Gra się skończyła, użyj komandy \"\\start\" żeby zacząć ponownie.")
+                self.bot.answer_callback_query(call.id, "Gra się skończyła, użyj komandy \"\\start\" żeby zacząć ponownie.")
                 self.bot.send_sticker(call.message.chat.id, "CAACAgIAAxkBAAISeWQl3DYx9XH-Ohw7hiG8u8N0lwukAAITAAPANk8TqrOH9384yqUvBA")
 
     
